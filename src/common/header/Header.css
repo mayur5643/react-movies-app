@@ -20,3 +20,9 @@
  @keyframes app-logo-spin {
     from { transform: scaleX(-1); }
  }
+
+ .loginReg-btn{
+    color: blue;
+    margin-top: 15%;
+    margin-left: 35%;
+ }
