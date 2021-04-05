@@ -6,8 +6,7 @@
 }
 
 .login-button {
-    float: right;
-    
+    float: right;    
 } 
 
 .app-logo {
@@ -24,5 +23,7 @@
  .loginReg-btn{
     color: blue;
     margin-top: 15%;
-    margin-left: 35%;
+    margin-left: 'auto';
+    margin-right: 'auto';
+    margin-bottom: 5%;
  }
