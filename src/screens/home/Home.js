@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import './Home.css';
 import Header from '../../common/header/Header';
+import {withStyles} from '@material-ui/core/styles';
+import moviesData from '../../common/movieData';
 
 const styles = theme =>({
     root:{
         flexGrow:1,
-        backgroundColor: theme.palatte.background.paper
+        backgroundColor: theme.palette.background.paper
     },
     upcomingMoviesHeading:{
         textAlign :'center',
@@ -22,10 +24,11 @@ const styles = theme =>({
 
 class Home extends Component{
     render(){
+        const { classes } = this.props;
         return(
             <div>
                 <Header />
-                <div>
+                <div className={classes.upcomingMoviesHeading}>
                     <span> Upcoming Movies </span>
                 </div>
             </div>
@@ -33,4 +36,4 @@ class Home extends Component{
     }
 }
 
-export default Home;
+export default withStyles(styles)(Home);
